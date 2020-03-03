@@ -1,0 +1,6 @@
+{
+    
+    "github.allowUnsafeSSL": true,
+    "github.autoPublish": true,
+    "github.preferedMergeMethod": "merge"
+}
