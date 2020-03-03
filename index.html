@@ -18,6 +18,7 @@
         width="400" data-iml="1583185226250" data-atf="1">
     </p>      
 <br>
+a img { border:none; }
 <p> 
     <img alt = "hebe" height="500" id="hplogo" src="WhatsApp Image 2020-01-29 at 9.20.21 PM.jpeg" 
     srcset="WhatsApp Image 2020-01-29 at 9.20.21 PM.jpeg 2x" style="padding-top:109px" 
@@ -39,7 +40,19 @@
 </p>
 </div>
 <script>
+var random_images_array = ["hebeskaf.jpeg", "hebe2.jpeg", "WhatsApp Image 2020-01-29 at 9.20.21 PM.jpeg", "WhatsApp Image 2020-02-05 at 9.00.33 AM.jpeg",
+ "WhatsApp Image 2020-02-05 at 9.01.39 AM.jpeg"];
+
+ function getRandomImage(imgAr, path) {
+    path = path || 'images/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+}
 
 </script>
+<script type="text/javascript">getRandomImage(random_images_array);</script>
+<script type="text/javascript">getRandomImage(random_images_array, '/images/');</script>
 </body>
 </html>
